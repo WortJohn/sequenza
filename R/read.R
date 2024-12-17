@@ -43,7 +43,7 @@ read.seqz.chr <- function(file, chr_name, col_names,
     }
     res <- chunk.apply(input = con, FUN = parse_chunck, chr_name = chr_name,
         col_names = col_names, col_types = col_types, CH.MAX.SIZE = buffer,
-        parallel = parallel)
+        CH.PARALLEL = parallel)
     close(con)
     res
 }
