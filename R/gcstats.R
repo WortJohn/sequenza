@@ -22,7 +22,7 @@ gc.sample.stats <- function(file, col_types = "c--dd----d----",
         message("Collecting GC information ", appendLF = FALSE)
     }
     res <- chunk.apply(input = con, FUN = parse_chunck, col_types = col_types,
-        CH.MAX.SIZE = buffer, parallel = parallel)
+        CH.MAX.SIZE = buffer, CH.PARALLEL = parallel)
     close(con)
     if (verbose){
         message(" done\n")
