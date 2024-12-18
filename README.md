@@ -1,7 +1,9 @@
 Solve the following issues:
 <br>
 Collecting GC information Error in (function (x, col_types) : unused argument (parallel = 1)
+<br>
 Calls: main ... preprocess.seqz -> sequenza.extract -> gc.sample.stats -> chunk.apply
+<br>
 Execution halted
 
 The reason:
